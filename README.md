@@ -1,0 +1,42 @@
+🤖 AI Research Assistant: A Multi-Agent SystemThis project is a fully functional AI Research Assistant built using a multi-agent system architecture. It automates the process of researching a topic and generating a comprehensive, well-structured report.📝 Problem StatementIn today's fast-paced world, professionals, students, and researchers spend countless hours gathering, summarizing, and synthesizing information to produce reports. This manual process is time-consuming and can be prone to bias. This project aims to solve that problem by deploying a team of specialized AI agents that collaborate to perform research tasks efficiently and produce high-quality, objective reports on any given topic.🧠 How It Works: The Agent InteractionsThe system uses a sequential workflow where the output of one agent becomes the input for the next. This creates an assembly line for knowledge creation.User Input: The process starts when the user provides a research topic.🔍 Searcher Agent:Role: Senior Research AnalystGoal: To find the most relevant and up-to-date articles, data, and news on the internet related to the user's topic.Tool: Tavily Search API.✍️ Summarizer Agent:Role: Expert Content SummarizerGoal: To read all the raw data from the Searcher and distill it into a concise, easy-to-understand summary, highlighting the key points.🧐 Critic Agent:Role: Critical AnalystGoal: To review the summary for any factual inaccuracies, logical fallacies, or potential biases. It provides constructive feedback to ensure the information is balanced and trustworthy.📄 Report Generator Agent:Role: Professional Report WriterGoal: To take the verified summary and the critic's feedback and write a final, polished, and comprehensive research report. The report is structured with an introduction, main body, and conclusion.The final report is then displayed to the user.🛠️ Technologies UsedCore Logic: PythonAI Framework: LangChainLarge Language Model (LLM): Groq (using Llama 3.1) for fast and powerful text generation.Search Tool: Tavily Search API for real-time web access.Web Interface: Streamlit🚀 Setup and Run InstructionsFollow these steps to run the project on your local machine.1. Clone the Repository:git clone [https://github.com/poonam10102003/ai-research-assistant.git](https://github.com/your-username/ai-research-assistant.git)
+cd ai-research-assistant
+2. Create a Virtual Environment:python -m venv venv
+# On Windows
+venv\Scripts\activate
+# On macOS/Linux
+source venv/bin/activate
+3. Install Dependencies:pip install -r requirements.txt
+4. Set Up API Keys:Create a file named .env in the root of the project folder.Get your free API keys from Groq and Tavily AI.Add your keys to the .env file like this:GROQ_API_KEY="gsk_YourGroqApiKeyHere"
+TAVILY_API_KEY="tvly-YourTavilyApiKeyHere"
+5. Run the Application:streamlit run app.py
+The application will open in your web browser.
+3.  **Save the `README.md` file.**
+4.  Now, upload this new file to your GitHub repository by running these commands in your terminal:
+    ```bash
+    git add README.md
+    git commit -m "Add detailed project README"
+    git push
+    ```
+    Refresh your GitHub page, and you will see your professional README file displayed!
+
+---
+
+### **Part 4: Deploy Your App on Streamlit Community Cloud**
+
+This is the final step to get a live, shareable link for your project.
+
+1.  **Sign Up:** Go to [share.streamlit.io](https://share.streamlit.io/) and sign up using your **GitHub account**. This is free.
+
+2.  **Create a New App:**
+    * In your Streamlit dashboard, click the **"New app"** button.
+    * Click **"Deploy from existing repo"**.
+    * For "Repository", select your `ai-research-assistant` repository.
+    * The "Branch" should be `main`, and the "Main file path" should be `app.py`.
+
+3.  **Add Your Secrets (API Keys):**
+    * Click on **"Advanced settings..."**.
+    * In the "Secrets" text box, you need to paste the exact content of your local `.env` file.
+    * It should look like this:
+        ```
+        GROQ_API_KEY="gsk_YourGroqApiKeyHere"
+        TAVILY_API_KEY="tvly-YourTavilyApiKeyHere"
