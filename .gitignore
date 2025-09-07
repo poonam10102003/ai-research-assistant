@@ -1,0 +1,9 @@
+Ignore the virtual environment folder
+/venv
+
+Ignore the Python cache folder
+pycache/
+
+!! VERY IMPORTANT !!
+Ignore the file containing secret API keys
+.env
