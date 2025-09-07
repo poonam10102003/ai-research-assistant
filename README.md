@@ -13,7 +13,9 @@
 
 🛠️ Technologies UsedCore Logic: PythonAI Framework: LangChainLarge Language Model (LLM): Groq (using Llama 3.1) for fast and powerful text generation.Search Tool: Tavily Search API for real-time web access.Web Interface: Streamlit
 
-🚀 Setup and Run InstructionsFollow these steps to run the project on your local machine.1. Clone the Repository:git clone [https://github.com/poonam10102003/ai-research-assistant]
+🚀 Setup and Run InstructionsFollow these steps to run the project on your local machine.
+
+1. Clone the Repository:git clone [https://github.com/poonam10102003/ai-research-assistant]
 cd ai-research-assistant
 
 2. Create a Virtual Environment (for Windows):python -m venv venv
